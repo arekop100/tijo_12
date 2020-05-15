@@ -7,6 +7,7 @@ class AccountBalanceSpec extends Specification{
 
     @Unroll
     def "should return #cash cash for #account account"(){
+
         given: "Initial data"
             def bank = new Bank()
             def accounts = SampleDataGenerator.accountsList

@@ -7,6 +7,7 @@ class SumAccountsBalanceSpec extends Specification{
 
     @Unroll
     def "should sum and return 850 from all accounts"(){
+
         given: "Initial data"
             def bank = new Bank()
             def accounts = SampleDataGenerator.accountsList

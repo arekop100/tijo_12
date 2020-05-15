@@ -7,6 +7,7 @@ class DepositSpec extends Specification{
 
     @Unroll
     def "should deposit #cashToDeposit cash to account number #accountNumber"(){
+
         given: "initial data"
             def accounts = SampleDataGenerator.accountsList
             def bank = new Bank()

@@ -7,6 +7,7 @@ class DeleteAccountSpec extends Specification{
 
     @Unroll
     def "should delete account number #accountNumber with cash #accountCash"(){
+
         given: "initial data"
             def bank = new Bank()
             def accounts = SampleDataGenerator.accountsList
